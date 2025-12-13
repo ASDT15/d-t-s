@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  
+  <!-- تحسينات SEO -->
+ 
+  <title>مكتب خدمات للمغتربين اليمنين</title>
+  <meta name="description" content="مكتب خدمات لمساعده المغتربين اليمنين" />
+  <meta name="keywords" content="محاوله خدماتك با اسهل واسرع طريقه" />
+  <meta name="author" content="DREAM TIME مكتب خدمات" />
+  <link rel="canonical" href="https://asdt15.github.io/Service-center-Dream-time/  " />
+
+  <!-- Open Graph Tags -->
+  <meta property="og:title" content="مكتب خدمات DREAM TIME | خدمات  موثوقة وعصرية" />
+  <meta property="og:description" content="نضمن لك الجودة والالتزام في جميع خدماتنا . خدمات موثوقة وعصرية." />
+  <meta property="og:image" content="https://asdt15.github.io/Service-center-Dream-time/LOGO.png  " />
+  <meta property="og:url" content="https://asdt15.github.io/Service-center-Dream-time/  " />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="DREAM TIME" />
+
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    html {
+      font-size: 16px;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #682062, #383838);
+      color: #ffffff;
+      overflow-x: hidden;
+      line-height: 1.6;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    button {
+      cursor: pointer;
+      border: none;
+      font-family: inherit;
+    }
+    input,
+    button {
+      outline: none;
+    }
+    :root {
+      --bg-dark: #000000d8;
+      --text-light: #ffffffd0;
+      --btn-bg: #ffeaf898;
+      --btn-hover: #ffffff;
+      --input-border: #82acfa;
+      --search-bg: #fffdfd;
+      --search-text: rgb(147, 158, 252);
+      --section-title-color: #ffffff;
+      --card-bg: #ffffff;
+      --card-border: #8acdfa;
+      --footer-bg: linear-gradient(to right, var(--bg-dark), var(--btn-bg));
+    }
+    .cartoon-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('https://www.transparenttextures.com/patterns/cubes.png  '), #000000;
+      opacity: 0.3;
+      z-index: -1;
+      pointer-events: none;
+    }
+    header {
+      background: linear-gradient(to right, var(--bg-dark), var(--btn-bg));
+      padding: 12px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-shrink: 0;
+    }
+    .logo-container img {
+      width: 70px;
+      height: auto;
+    }
+    .logo-texts {
+      display: flex;
+      flex-direction: column;
+    }
+    .logo-texts h1 {
+      font-size: 1.4rem;
+      margin: 0;
+      color: #6d1e4c;
+    }
+    .logo-texts h2 {
+      font-size: 1rem;
+      margin: 0;
+      color: #ffffff;
+      opacity: 0.9;
+    }
+    .greeting {
+      color: #e1ff75;
+      font-size: 1.1rem;
+      font-weight: bold;
+      text-align: center;
+      margin: 0;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 10px;
+      border-radius: 10px;
+      flex: 1;
+      min-width: 200px;
+    }
+    /* --- أسلوب زر فتح المتجر --- */
+    .top-button {
+      background: var(--btn-bg);
+      color: rgb(0, 0, 0);
+      border: none;
+      border-radius: 30px; /* زوايا دائرية */
+      padding: 10px 15px; /* مساحة داخلية */
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 0.9rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* ظل بسيط */
+      transition: background 0.3s, transform 0.2s; /* تأثير عند التحويم */
+      white-space: nowrap; /* منع الالتفاف */
+    }
+
+    .top-button:hover {
+      background: var(--btn-hover); /* لون عند التحويم */
+      transform: scale(1.05); /* تكبير بسيط عند التحويم */
+    }
+    /* --- النهاية: أسلوب زر فتح المتجر --- */
+    .contact-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: #25d366;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      cursor: pointer;
+      font-size: 1.8rem;
+      transition: transform 0.3s;
+    }
+    .contact-button:hover {
+      transform: scale(1.1);
+    }
+    .social-icons {
+      position: fixed;
+      bottom: 100px;
+      right: 20px;
+      z-index: 1000;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .social-icon {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      background: #3b5998;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+    .social-icon:hover {
+      transform: scale(1.1);
+    }
+    .social-icon.whatsapp {
+      background: #25d366;
+    }
+    .social-icon.instagram {
+      background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    }
+    .social-icon.twitter {
+      background: #1da1f2;
+    }
+    .social-icon.youtube {
+      background: #ff0000;
+    }
+    .image-slider {
+      width: 100%;
+      max-width: 1400px;
+      margin: 0 auto 25px;
+      overflow: hidden; /* ⭐ يخفي الصور خارج الشريحة */
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      height: 200px;
+      position: relative;
+    }
+    .slider-container {
+      position: relative; /* ⭐ لتحديد موقع الصور المطلقة */
+      width: 100%;
+      height: 100%;
+    }
+    .slider-image {
+      position: absolute; /* ⭐ يجعل الصور مطلقة */
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain; /* ⭐ يظهر الصورة بالكامل داخل الحاوية */
+      opacity: 0; /* ⭐ مبدئيًا مخفي */
+      transition: opacity 0.5s ease-in-out; /* ⭐ تأثير الظهور */
+    }
+    .slider-image.active {
+      opacity: 1; /* ⭐ تظهر الصورة النشطة */
+    }
+    /* --- أسلوب زر التكبير --- */
+    .zoom-button {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 1rem;
+      opacity: 0;
+      transition: opacity 0.3s;
+      z-index: 10;
+    }
+    .slider-container:hover .zoom-button {
+      opacity: 1;
+    }
+    .main-content {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 20px 20px;
+    }
+    .page-title {
+      text-align: center;
+      font-size: 1.8rem;
+      margin: 20px 0;
+      color: #ffffff;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 25px;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 15px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      opacity: 1;
+      transform: translateY(0);
+      cursor: pointer;
+    }
+    .image-container {
+      position: relative;
+      overflow: hidden;
+      height: 300px;
+    }
+    .card img {
+      width: 100%;
+      height: 100%;
+      object-fit: scale-down;
+      background-color: #f9f9f9;
+    }
+    .card-body {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+    .card-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #000000;
+      margin-bottom: 10px;
+    }
+    .card-desc {
+      font-size: 0.95rem;
+      color: #333;
+      margin-bottom: 15px;
+      flex-grow: 1;
+    }
+
+    .card-price-container {
+      margin-bottom: 15px;
+      position: relative;
+    }
+
+    .card-price-current {
+      font-weight: bold;
+      color: #000000;
+      font-size: 1.2rem;
+      display: flex;
+      align-items: flex-end;
+      gap: 4px;
+    }
+
+    .card-price-currency {
+      font-size: 0.75rem;
+      color: #666;
+      align-self: flex-end;
+      direction: ltr;
+    }
+
+    .request-service {
+      background: var(--btn-bg);
+      color: rgb(0, 0, 0);
+      border: none;
+      padding: 12px 20px;
+      border-radius: 30px;
+      cursor: pointer;
+      font-weight: bold;
+      width: 100%;
+      font-size: 1rem;
+      margin-top: auto;
+    }
+    .request-service:hover {
+      background: var(--btn-hover);
+      box-shadow: 0 4px 12px rgba(255, 120, 226, 0.4);
+    }
+    footer {
+      background: var(--footer-bg);
+      padding: 30px 20px;
+      margin-top: 40px;
+      color: white;
+    }
+    .footer-content {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+    .footer-section h3 {
+      color: #afdbf8;
+      margin-bottom: 15px;
+      font-size: 1.3rem;
+    }
+    .footer-section p, .footer-section li {
+      margin-bottom: 10px;
+      line-height: 1.6;
+    }
+    .footer-links {
+      list-style: none;
+    }
+    .footer-links li {
+      margin-bottom: 8px;
+    }
+    .footer-links a {
+      color: #ffffff;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .footer-links a:hover {
+      color: #afdbf8;
+    }
+    .copyright {
+      text-align: center;
+      padding-top: 20px;
+      margin-top: 20px;
+      border-top: 1px solid rgba(255,255,255,0.2);
+    }
+    /* --- أسلوب نافذة التكبير --- */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 2000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.9);
+      backdrop-filter: blur(5px);
+    }
+    .modal-content {
+      margin: auto;
+      display: block;
+      width: 80%;
+      max-width: 700px;
+      max-height: 80%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      object-fit: contain;
+    }
+    .close {
+      position: absolute;
+      top: 15px;
+      right: 35px;
+      color: #f1f1f1;
+      font-size: 40px;
+      font-weight: bold;
+      cursor: pointer;
+      z-index: 2001;
+    }
+    .close:hover,
+    .close:focus {
+      color: #bbb;
+    }
+
+    @media (max-width: 768px) {
+      .grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+      }
+      .card-body {
+        padding: 15px;
+      }
+      .card-title {
+        font-size: 1.1rem;
+      }
+      .request-service {
+        padding: 10px 15px;
+        font-size: 0.95rem;
+      }
+      .social-icons {
+        bottom: 90px;
+      }
+      .zoom-button {
+        opacity: 1; /* يظهر الزر دائمًا على الشاشات الصغيرة */
+      }
+    }
+    @media (max-width: 576px) {
+      .grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+      }
+      .image-container {
+        height: 250px;
+      }
+      .contact-button {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+      }
+      .social-icons {
+        bottom: 80px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="cartoon-bg"></div>
+  <header>
+    <div class="header-content">
+      <div class="logo-container">
+        <img src="LOGO.png" alt="مكتب خدمات DREAM TIME" loading="eager">
+        <div class="logo-texts">
+          <h1> مكتب خدمات</h1>
+          <h2>DREAM TIME</h2>
+        </div>
+      </div>
+      <div class="greeting">اهلا وسهلا بك نورتنا😍</div>
+      <!-- --- زر فتح المتجر الإلكتروني --- -->
+      <button class="top-button" onclick="openStore()">🛍️ متجر الأحذية في صنعاء</button>
+      <!-- --- النهاية: زر فتح المتجر الإلكتروني --- -->
+    </div>
+  </header>
+  
+  <main>
+    <div class="main-content">
+      <h1 class="page-title">خدمات موثوقة لمساعدتك با الامور القانونيه</h1>
+      
+      <div class="image-slider" id="imageSlider">
+        <div class="slider-container">
+          <img src="1.JPEG" class="slider-image active" alt="خدمة 1" loading="eager">
+          <img src="2.PNG" class="slider-image" alt="خدمة 2" loading="eager">
+          <img src="3.PNG" class="slider-image" alt="خدمة 3" loading="eager">
+          <img src="4.PNG" class="slider-image" alt="خدمة 4" loading="eager">
+          <img src="5.jpeg" class="slider-image" alt="خدمة 5" loading="eager">
+          <!-- زر التكبير داخل حاوية الشريطة -->
+          <button class="zoom-button" onclick="openModal(this)">💢</button>
+        </div>
+      </div>
+      
+      <div class="grid" id="productGrid">
+        <!-- سيتم ملؤه تلقائيًا -->
+      </div>
+    </div>
+    
+    <!-- أيقونة الاتصال -->
+    <div class="contact-button" onclick="openWhatsApp()">
+      <i>💬</i>
+    </div>
+  </main>
+
+  <!-- نافذة التكبير -->
+  <div id="zoomModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImg">
+  </div>
+
+  <script>
+    // --- المتغيرات ---
+    let currentSlide = 0;
+    const totalSlides = 5; // عدد الصور في شريط الصور
+    let slideInterval; // متغير لتخزين المؤقت
+
+    // --- المنتجات اليدوية ---
+    // ملاحظة: القيم الآن تمثل السعر مباشرة بالريال السعودي
+    let products = [
+      {
+        id: 1,
+        name: "خدمات تفعيل ابشر على الجواز او الرقم المواقت ",
+        price: 15, // السعر بالريال السعودي
+        oldPrice: 30, // السعر الأصلي بالريال السعودي (لإظهار الخصم)
+        description: "خدمه تساعدك على تفعيل منصه ابشر وحصولك على اقامه ابشر",
+        image: "1.JPEG"
+      },
+      {
+        id: 2,
+        name: " رفع شكوى العماليه عبر ناجز",
+        price: 30, // السعر بالريال السعودي
+        oldPrice: 50, // السعر الأصلي بالريال السعودي
+        description: "فني يركز على جعل التوازن موجود في الارضي+الجدران",
+        image: "2.PNG",
+      },
+      {
+        id: 3,
+        name: "كتابيه قضياتك للمحكمه وتوضيحها واستشارات لقضيتك",
+        price: 30,  // السعر بالريال السعودي
+        oldPrice: 50, // السعر الأصلي بالريال السعودي
+        description: "معرفه القضيه وكتاباتها كلها با صيغه مناسبه للمحكمه وايضا تقديم اسخارات للقضيه",
+        image: "2.PNG",
+      },
+       {
+        id: 4,
+        name: "تفعيل حساب قوى لاجل عقد العمل",
+        price: 10,  // السعر بالريال السعودي
+        oldPrice: 20, // السعر الأصلي بالريال السعودي
+        description: "دخولك منصه قوى لاجل الاطلاع على عقد العمل",
+        image: "3.PNG",
+      },
+       {
+        id: 5,
+        name: "مساعدتك لفتح حساب بنكي",
+        price: 15,  // السعر بالريال السعودي
+        oldPrice: 30, // السعر الأصلي بالريال السعودي
+        description: "مساعدتك با فتح حساب بنكي خطوه با خطوه",
+        image: "4.PNG", 
+      }
+    ];
+
+    // دالة تهيئة شريط الصور (تمت إزالة المؤشرات)
+    function initSliderIndicators() {
+      // تم إزالة هذا الجزء
+    }
+
+    // دالة تحديث شريط الصور (JavaScript فقط)
+    function updateSlider() {
+      const images = document.querySelectorAll('.slider-image');
+      const zoomButton = document.querySelector('.zoom-button'); // اختر الزر من داخل الحاوية
+
+      // إخفاء جميع الصور
+      images.forEach(img => img.classList.remove('active'));
+      // عرض الصورة الحالية فقط
+      images[currentSlide].classList.add('active');
+
+      // تحديث src للزر عند تغيير الصورة النشطة
+      if (zoomButton) {
+        zoomButton.setAttribute('data-image-src', images[currentSlide].src);
+      }
+    }
+
+    // دالة تغيير الصورة (تم إزالة المؤشرات)
+    function changeSlide(direction) {
+      clearInterval(slideInterval); // إيقاف التحرك التلقائي مؤقتاً
+      currentSlide += direction;
+      if (currentSlide < 0) currentSlide = totalSlides - 1;
+      if (currentSlide >= totalSlides) currentSlide = 0;
+      updateSlider();
+      startSlider(); // إعادة تشغيل التحرك التلقائي
+    }
+
+    // دالة الذهاب إلى صورة محددة (تم إزالة المؤشرات)
+    function goToSlide(slideIndex) {
+      clearInterval(slideInterval); // إيقاف التحرك التلقائي مؤقتاً
+      currentSlide = slideIndex;
+      updateSlider();
+      startSlider(); // إعادة تشغيل التحرك التلقائي
+    }
+
+    // دالة بدء التحرك التلقائي
+    function startSlider() {
+      slideInterval = setInterval(() => {
+        currentSlide++;
+        if (currentSlide >= totalSlides) currentSlide = 0;
+        updateSlider();
+      }, 3000); // تغيير كل 3 ثواني
+    }
+
+    // دالة عرض المنتجات (بلا تغيير)
+    function renderProducts(productsToRender) {
+      const grid = document.getElementById('productGrid');
+      if (!grid) return;
+      grid.innerHTML = '';
+      if (productsToRender.length === 0) {
+        grid.innerHTML = '<p style="grid-column:1/-1;text-align:center;color:#fff;font-size:1.2rem;">لا توجد خدمات مطابقة</p>';
+        return;
+      }
+      const fragment = document.createDocumentFragment();
+      productsToRender.forEach(product => {
+        const card = createProductCard(product);
+        fragment.appendChild(card);
+      });
+      grid.appendChild(fragment);
+    }
+
+    // دالة إنشاء بطاقة المنتج (تمت إزالة زر التكبير منها)
+    function createProductCard(product) {
+        const card = document.createElement('div');
+        card.className = 'card';
+
+        const shortDescription = product.description && product.description.length > 50
+            ? product.description.slice(0, 50) + "..."
+            : product.description || "وصف غير متوفر";
+
+        // عرض السعر فقط إذا كان غير 0
+        let priceHtml = '';
+        if (product.price > 0) {
+          // استخدم السعر مباشرة من الكائن
+          const displayPrice = product.price.toFixed(2); // لعرض رقمين عشريين
+          // استخدم السعر الأصلي (لإظهار الخصم) من الكائن
+          const displayOldPrice = product.oldPrice.toFixed(2);
+
+          priceHtml = `
+            <div class="card-price-current">
+              <span style="color:#000000; font-weight:bold;">${displayPrice} ر.س</span>
+              <span style="color:red; text-decoration:line-through; font-weight:normal; margin-right:8px;">${displayOldPrice} ر.س</span>
+            </div>
+          `;
+        } else {
+          priceHtml = `
+            <div class="card-price-current">
+              <span style="color:#000000; font-weight:bold;">اطلب معاينة مجانية</span>
+            </div>
+          `;
+        }
+
+        card.innerHTML = `
+            <div class="image-container">
+                <img src="${product.image}" alt="${product.name}" loading="lazy">
+            </div>
+            <div class="card-body">
+                <div class="card-title">${product.name}</div>
+                <div class="card-desc">${shortDescription}</div>
+                
+                <div class="card-price-container">
+                  ${priceHtml}
+                </div>
+
+                <button class="request-service" onclick="requestService(${product.id})">طلب الخدمة</button>
+            </div>
+        `;
+
+        return card;
+    }
+
+    // --- دوال تكبير الصورة ---
+    function openModal(button) {
+      const imageSrc = button.getAttribute('data-image-src');
+      if (!imageSrc) return; // تحقق من وجود عنوان الصورة
+
+      const modal = document.getElementById("zoomModal");
+      const modalImg = document.getElementById("modalImg");
+      modal.style.display = "block";
+      modalImg.src = imageSrc;
+    }
+
+    function closeModal() {
+      const modal = document.getElementById("zoomModal");
+      modal.style.display = "none";
+    }
+
+    // عند النقر على زر الإغلاق أو خارج الصورة
+    window.onclick = function(event) {
+      const modal = document.getElementById("zoomModal");
+      if (event.target === modal) {
+        modal.style.display = "none";
+      }
+    }
+
+    // --- دالة فتح المتجر الإلكتروني ---
+    function openStore() {
+      window.open('https://asdt15.github.io/DR-TE/  ', '_blank'); // '_blank' لفتح الرابط في تبويب جديد
+    }
+    // --- النهاية: دالة فتح المتجر الإلكتروني ---
+
+    function requestService(productId) {
+      const product = products.find(p => p.id === productId);
+      if (!product) return;
+      const phoneNumber = "966542819759";
+      let message = `طلب جديد للخدمة:%0A`;
+      message += `الخدمة: ${product.name}%0A`;
+      if (product.price > 0) {
+        const displayPrice = product.price.toFixed(2);
+        const displayOldPrice = product.oldPrice.toFixed(2);
+        message += `السعر: ${displayPrice} ر.س (السعر السابق: ${displayOldPrice} ر.س)%0A`;
+      } else {
+        message += `نوع الخدمة: ${product.name}%0A`;
+      }
+      message += `الرجاء تزويدي بالموقع ونوع المشكلة / العمل المطلوب.%0A`;
+      window.open(`https://wa.me/  ${phoneNumber}?text=${encodeURIComponent(message)}`, '_blank');
+    }
+
+    // دوال فتح وسائل التواصل
+    function openWhatsApp() {
+      window.open('https://wa.me/966542819759  ', '_blank');
+    }
+
+    // --- تهيئة الصفحة ---
+    document.addEventListener("DOMContentLoaded", function () {
+      updateSlider(); // عرض الصورة الأولى وتحديث عنوان الصورة في الزر
+      startSlider(); // بدء التحرك التلقائي
+      renderProducts(products);
+    });
+  </script>
+</body>
+</html>
